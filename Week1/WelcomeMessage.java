@@ -1,0 +1,10 @@
+package Week1;
+
+public class WelcomeMessage{
+    public static void main(String[] args){
+        System.out.println("Welcome to Programming!");
+        System.out.println("My Name is Shimran Shrestha");
+        System.out.println("I am learning Java programming");
+        System.out.println("This is my first program");
+    }
+}
