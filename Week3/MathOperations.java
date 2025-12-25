@@ -46,16 +46,6 @@ public class MathOperations
     
     //Logical operator
     System.out.println(a>b && a !=b);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}}
+      
+}
+}
