@@ -10,20 +10,32 @@ package Week8;
 public class Calculator
 {
     //instance method
-    //void reyurn type + no parameters
+    //void return type+ no parameters
     public void displayInfo()
     {
-        System.out.println("Welcome to calculator app.");
+        System.out.println("welcome to Calculator app.");
+    }
+    //void return type + parameters
+    public void add(int a, int b)//formal parameters
+    {
+        System.out.println("The sum of two numbers are: "+ (a+b));
+    }
+    //return type +no parameters
+    
+    public int getFixedNumber()
+    {
+       return 10; 
+    }
+    //return type+parameters
+    public int multiply(int c, int d)
+    {
+        int mul=c*d;
+        return mul;
+    }
+    //static method
+    public static int square(int a)
+    {
+        return a*a;
     }
 }
-
-//void return type + parameters
-public void add(int a, int b) //formak parammeers
-{
-    System.out.println("The sum of two numbers are: "+  (a+b"));
-        
-}
-
-
-//reeturn
 

@@ -1,0 +1,26 @@
+package Week9;
+
+
+/**
+ * Write a description of class a here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+class Teacher extends Person {
+    String subject;
+    double bonus;
+
+    // Constructor
+    Teacher(int id, String name, double basicSalary, String subject, double bonus) {
+        super(id, name, basicSalary);
+        this.subject = subject;
+        this.bonus = bonus;
+    }
+
+    // Overriding method
+    @Override
+    double calculateAnnualSalary() {
+        return super.calculateAnnualSalary() + bonus;
+    }
+}
