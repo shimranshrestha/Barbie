@@ -9,12 +9,12 @@ package Week10;
  */
 public class OfflineCourse extends Course
 {
-    private double labbFee;
+    private double labFee;
     
     public OfflineCourse(int courseId, String courseName, double baseFee, double labFee)
     {
         super(courseId, courseName, baseFee);
-        this.labbFee=labbFee;
+        this.labFee=labFee;
     }
     
     @Override
