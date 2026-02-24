@@ -7,27 +7,33 @@ package Week11;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class CarDelivery extends Delivery
+public class CarDelivery extends Delivery implements Notifications
 {
-    private static final double per_km_charge= 60;
-    private static final double min_per_km= 5;
-    public CarDelivery(int  orderId, double distanceInKm, String pickUp, String dropOff)
-    {
+    private static final double PER_KM_CHARGE = 10;
+    private static final double MIN_PER_KM = 5;
+    
+    public CarDelivery(int orderId, double distanceInKm, String pickUp, String dropOff){
         super(orderId, distanceInKm, pickUp, dropOff);
     }
-    @Override
-    public double calculatecharge()
+    
+    @Override 
+    public double calculateCharge()
     {
-        return super.getDistance()+per_km_charge;
-    }
-    @Override
-    public double estimatetime()
-    {
-      return super.getDistance()+min_per_km;    
+        return super.getDistance() * PER_KM_CHARGE;
     }
     
-    public void display()
+    @Override
+    public double estimateTime(){
+        return super.getDistance() * MIN_PER_KM;
+    }
+    
+    @Override
+    public void notify(String message)
     {
-        System.out.println("Charge:" + this.calculatecharge());
+        System.out.println("Order placed");
+    }
+    
+    public void display(){
+        System.out.println("Charge: "+this.calculateCharge());
     }
 }

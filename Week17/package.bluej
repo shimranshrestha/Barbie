@@ -1,0 +1,27 @@
+#BlueJ package file
+objectbench.height=324
+objectbench.width=1656
+package.divider.horizontal=0.6
+package.divider.vertical=0.6221461187214612
+package.editor.height=538
+package.editor.width=1543
+package.editor.x=0
+package.editor.y=25
+package.frame.height=940
+package.frame.width=1680
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+readme.height=60
+readme.name=@README
+readme.width=48
+readme.x=10
+readme.y=10
+target1.height=70
+target1.name=Window
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=120
+target1.x=10
+target1.y=110
